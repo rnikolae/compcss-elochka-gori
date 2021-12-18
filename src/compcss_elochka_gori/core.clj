@@ -66,5 +66,7 @@
 
 (defn middleware
   [condiguration db]
-  "da")
+  (-> (slurp "some-file ") 
+      (elochka-gori) 
+      (spit "some-file")))
 
